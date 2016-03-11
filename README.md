@@ -1,3 +1,20 @@
+
+# F03gl #
+> Modules for using the OpenGL graphics library from Fortran
+
+This project is derived from the pioneering work of Anthony Stone
+and Aleksandar Donev for creating a complete Fortran 2003 interface
+to OpenGL library along with GLU and GLUT libraries.
+
+With respect to the original project, this version adds support
+for building the package with autoconf/automake/libtool creating
+shared libraries and it provides a spec file for building a .rpm
+package on a Fedora Linux distribution, thus enhancing the
+portability.
+
+The text of the original README is reported here:
+
+```
 F03GL -- modules for using the OpenGL graphics library from Fortran
 
   Copyright 2009 Anthony Stone and Aleksandar Donev
@@ -42,3 +59,4 @@ well as 32-bit.
 
 Anthony Stone      ajs1 at cam dot ac dot uk
 Aleksandar Donev   aleks dot donev at gmail dot com
+```
