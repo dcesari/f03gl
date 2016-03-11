@@ -88,7 +88,7 @@ nodist_glinclude_HEADERS = opengl_gl.mod opengl_glu.mod opengl_glut.mod \
  opengl_kinds.mod
 
 # additional files to be packaged and installed
-dist_pkgdoc_DATA = README COPYING
+dist_pkgdoc_DATA = README.md COPYING
 # additional files to be packaged but not installed
 dist_noinst_DATA = FreeGLUT.h GL.h GLU.h GLUT.h OpenGLUT.h \
  enumglu.spec enum.spec gl.spec glu.spec f03gl.spec Script.sh \

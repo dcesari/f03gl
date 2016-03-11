@@ -42,14 +42,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-%{_libdir}/*.la
-%{_libdir}/*.so*
-##%{_docdir}/%{name}-%{version}/*
-%doc README
+%{_libdir}/*.so.*
+#doc   COPYING README.md
+%{_docdir}/%{name}-%{version}/*
 
 %files devel
 %{_fmoddir}/GL/*.mod
 %{_libdir}/*.a
+%{_libdir}/*.la
+%{_libdir}/*.so*
 
 %changelog
 * Fri Mar 11 2016 Davide Cesari <dcesari@malina.metarpa> - 2.0-1
