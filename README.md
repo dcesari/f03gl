@@ -2,15 +2,26 @@
 # F03gl #
 > Modules for using the OpenGL graphics library from Fortran
 
-This project is derived from the pioneering work of Anthony Stone
-and Aleksandar Donev for creating a complete Fortran 2003 interface
-to OpenGL library along with GLU and GLUT libraries.
+This project is derived from the pioneering work of [Anthony Stone and
+Aleksandar Donev](http://www-stone.ch.cam.ac.uk/pub/f03gl/index.xhtml)
+for creating a complete Fortran interface to the OpenGL library along
+with GLU and GLUT libraries using the F2003 `ISO_C_BINGING` intrinsic
+module.
 
 With respect to the original project, this version adds support
 for building the package with autoconf/automake/libtool creating
 shared libraries and it provides a spec file for building a .rpm
 package on a Fedora Linux distribution, thus enhancing the
 portability.
+
+You should thus build the package following the usual GNU procedure:
+
+```
+# autoreconf -if # only necessary if you download the raw git sources
+# ./configure
+# make
+# make install
+```
 
 The text of the original README is reported here:
 
