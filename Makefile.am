@@ -90,9 +90,12 @@ nodist_glinclude_HEADERS = opengl_gl.mod opengl_glu.mod opengl_glut.mod \
 # additional files to be packaged and installed
 dist_pkgdoc_DATA = README.md COPYING
 # additional files to be packaged but not installed
-dist_noinst_DATA = FreeGLUT.h GL.h GLU.h GLUT.h OpenGLUT.h \
- enumglu.spec enum.spec gl.spec glu.spec f03gl.spec Script.sh \
- glut_interfaces.pl spec_interfaces.pl h_interfaces.glutnullfunc.pl h_interfaces.pl
+dist_noinst_DATA = FreeGLUT.h GL.h GLU.h GLUT.h OpenGLUT.h f03gl.spec \
+ build_interface/enumglu.spec build_interface/enum.spec \
+ build_interface/gl.spec build_interface/glu.spec \
+ build_interface/Script.sh build_interface/glut_interfaces.pl \
+ build_interface/spec_interfaces.pl build_interface/h_interfaces.glutnullfunc.pl \
+ build_interface/h_interfaces.pl
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT) *.mod
