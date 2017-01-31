@@ -91,8 +91,8 @@ nodist_glinclude_HEADERS = opengl_gl.mod opengl_glu.mod opengl_glut.mod \
 dist_pkgdoc_DATA = README.md COPYING
 # additional files to be packaged but not installed
 dist_noinst_DATA = FreeGLUT.h GL.h GLU.h GLUT.h OpenGLUT.h f03gl.spec \
- build_interface/enumglu.spec build_interface/enum.spec \
- build_interface/gl.spec build_interface/glu.spec \
+ build_interface/enumglu.spec.orig build_interface/enum.spec.orig \
+ build_interface/gl.spec.orig build_interface/glu.spec.orig \
  build_interface/Script.sh build_interface/glut_interfaces.pl \
  build_interface/spec_interfaces.pl build_interface/h_interfaces.glutnullfunc.pl \
  build_interface/h_interfaces.pl
