@@ -5,7 +5,7 @@
 This project is derived from the pioneering work of [Anthony Stone and
 Aleksandar Donev](http://www-stone.ch.cam.ac.uk/pub/f03gl/index.xhtml)
 for creating a complete Fortran interface to the OpenGL library along
-with GLU and GLUT libraries using the F2003 `ISO_C_BINGING` intrinsic
+with GLU and GLUT libraries using the F2003 `ISO_C_BINDING` intrinsic
 module.
 
 With respect to the original project, this version adds support
