@@ -1,7 +1,7 @@
 Summary: Fortran 2003 bindings for OpenGL
 Name: f03gl
-Version: 2.0
-Release: 3%{dist}
+Version: 2.1
+Release: 1%{dist}
 License: GPLv3
 Group: System Environment/Libraries
 URL: http://www-stone.ch.cam.ac.uk/pub/f03gl/index.xhtml
@@ -53,6 +53,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*.so*
 
 %changelog
+* Wed Feb 22 2017 Davide Cesari <dcesari@arpae.it>
+- new package built with tito
+
 * Fri Mar 11 2016 Davide Cesari <dcesari@malina.metarpa> - 2.0-1
 - New version with clear license
 
