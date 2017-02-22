@@ -28,6 +28,7 @@ along with the GLU and GLUT toolkits, devel package.
 %setup -q
 
 %build
+autoreconf -ifv
 %configure --disable-examples
 make
 
