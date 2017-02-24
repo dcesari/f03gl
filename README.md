@@ -24,7 +24,7 @@ You should thus build the package following the usual GNU procedure:
 ```
 The package is also available for some versions of Fedora and CentOS distros
 as a personal copr repository 
-![build status](https://copr.fedorainfracloud.org/coprs/dcesari69/interfortran/package/f03gl/status_image/last_build.png)
+[![build status](https://copr.fedorainfracloud.org/coprs/dcesari69/interfortran/package/f03gl/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/dcesari69/interfortran/package/f03gl/)
 Instructions for enabling the repository can be found in the
 [interfortran copr project page](https://copr.fedorainfracloud.org/coprs/dcesari69/interfortran/).
 
