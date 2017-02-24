@@ -22,6 +22,11 @@ You should thus build the package following the usual GNU procedure:
 # make
 # make install
 ```
+The package is also available for some versions of Fedora and CentOS distros
+as a personal copr repository 
+![https://copr.fedorainfracloud.org/coprs/dcesari69/interfortran/package/f03gl/](https://copr.fedorainfracloud.org/coprs/dcesari69/interfortran/package/f03gl/status_image/last_build.png)
+Instructions for enabling the repository can be found in the
+[interfortran copr project page](https://copr.fedorainfracloud.org/coprs/dcesari69/interfortran/).
 
 The text of the original README is reported here:
 
