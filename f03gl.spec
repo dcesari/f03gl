@@ -1,7 +1,7 @@
 Summary: Fortran 2003 bindings for OpenGL
 Name: f03gl
 Version: 2.1
-Release: 5%{dist}
+Release: 6
 License: GPLv3
 Group: System Environment/Libraries
 URL: http://www-stone.ch.cam.ac.uk/pub/f03gl/index.xhtml
