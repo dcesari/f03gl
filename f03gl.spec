@@ -1,11 +1,11 @@
 Summary: Fortran 2003 bindings for OpenGL
 Name: f03gl
 Version: 2.1
-Release: 5%{dist}
+Release: 7
 License: GPLv3
 Group: System Environment/Libraries
 URL: http://www-stone.ch.cam.ac.uk/pub/f03gl/index.xhtml
-Source0: https://github.com/dcesari/f03gl/archive/refs/tags/%{name}-%{version}-%{release}.tar.gz
+Source0: https://github.com/dcesari/f03gl/archive/refs/tags/%{version}-%{release}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: gcc-gfortran, mesa-libGL-devel, mesa-libGLU-devel, freeglut-devel, libtool
 
@@ -25,7 +25,7 @@ A Fortran 2003 interface to the OpenGL library,
 along with the GLU and GLUT toolkits, devel package.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-%{release}
 
 %build
 autoreconf -ifv
