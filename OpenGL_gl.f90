@@ -19,7 +19,7 @@ USE, INTRINSIC :: ISO_C_BINDING
 USE OpenGL_kinds
 IMPLICIT NONE
 PUBLIC
-
+PRIVATE tmp_all_1
 
 !  Version values
 INTEGER(GLenum), PARAMETER :: GL_VERSION_1_1=1
@@ -549,8 +549,9 @@ INTEGER(GLenum), PARAMETER :: GL_REPEAT                = z'2901' ! 0x2901
 !  ClientAttribMask values
 INTEGER(GLbitfield), PARAMETER :: GL_CLIENT_PIXEL_STORE_BIT = z'00000001' ! 0x00000001
 INTEGER(GLbitfield), PARAMETER :: GL_CLIENT_VERTEX_ARRAY_BIT = z'00000002' ! 0x00000002
+INTEGER(C_INT), PARAMETER :: tmp_all_1 = z'ffffffff'
 INTEGER(GLbitfield), PARAMETER :: GL_CLIENT_ALL_ATTRIB_BITS =                 &
-    transfer(z'ffffffff',GL_CURRENT_BIT) ! 0xffffffff
+ TRANSFER(tmp_all_1,GL_CURRENT_BIT) ! 0xffffffff
 !  polygon_offset values
 INTEGER(GLenum), PARAMETER :: GL_POLYGON_OFFSET_FACTOR = z'8038' ! 0x8038
 INTEGER(GLenum), PARAMETER :: GL_POLYGON_OFFSET_UNITS  = z'2A00' ! 0x2A00

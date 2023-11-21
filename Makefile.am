@@ -54,30 +54,38 @@ if DO_EXAMPLES
 noinst_PROGRAMS += sphere stars blender scube modview plotfunc
 
 sphere_SOURCES = sphere.f90
+sphere.o: libf03gl.la
 sphere_LDADD = libf03gl.la
 
 stars_SOURCES = stars.f90
+stars.o: libf03gl.la
 stars_LDADD = libf03gl.la
 
 blender_SOURCES = blender.f90
+blender.o: libf03gl.la
 blender_LDADD = libf03gl.la
 
 scube_SOURCES = scube.f90
+scube.o: libf03gl.la
 scube_LDADD = libf03gl.la
 
 modview_SOURCES = modview.f90
+modview.o: libf03gl.la
 modview_LDADD = libf03gl.la
 
 plotfunc_SOURCES = plotfunc.f90
+plotfunc.o: libf03gl.la
 plotfunc_LDADD = libf03gl.la
 
 if GLUT_sgiglut
 noinst_PROGRAMS += RandomSphere_GLUT
 RandomSphere_GLUT_SOURCES = RandomSphere_GLUT.f90
+RandomSphere_GLUT.o: libf03gl.la
 RandomSphere_GLUT_LDADD = libf03gl.la
 else
 noinst_PROGRAMS += RandomSphere_OpenGLUT
 RandomSphere_OpenGLUT_SOURCES = RandomSphere_OpenGLUT.f90
+RandomSphere_OpenGLUT.o: libf03gl.la
 RandomSphere_OpenGLUT_LDADD = libf03gl.la
 endif
 endif

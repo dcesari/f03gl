@@ -73,13 +73,20 @@ AM_CONDITIONAL(DO_EXAMPLES, test "x$enableval" = "xyes")
 
 dnl Locate Fortran 90 compiler among these if not specified
 AC_PROG_FC([gfortran g95 pgf90 pgf95 ifort xlf90 xlf95 f90 f95])
-dnl add any compiler-specific option here
-if test "x$FC" = "xgfortran"; then
- FCFLAGS="$FCFLAGS -fno-range-check"
-fi
 
 AC_LANG_PUSH(Fortran)dnl Do the following checks in Fortran
 AC_FC_SRCEXT(f90)dnl and use .f90 extension
+
+dnl add any compiler-specific option here
+if test "x$FC" = "xgfortran"; then
+ FCFLAGS="$FCFLAGS -fno-range-check"
+ FCFLAGS_save="$FCFLAGS"
+ FCFLAGS="$FCFLAGS -fallow-invalid-boz"
+ AC_COMPILE_IFELSE(
+  [AC_LANG_PROGRAM(,[[      INTEGER :: i]])],
+  [AC_MSG_RESULT([using -fallow-invalid-boz compiler option])],
+  [FCLAGS=FCFLAGS_save])
+fi
 
 AC_COMPILE_IFELSE(
   [AC_LANG_PROGRAM(,[[      USE, INTRINSIC :: ISO_C_BINDING]])],
@@ -89,8 +96,8 @@ AC_COMPILE_IFELSE(
 dnl F77=$FC
 dnl FFLAGS=$FCFLAGS
 
-
-AC_PROG_LIBTOOL
+LT_INIT
+dnl AC_PROG_LIBTOOL
 
 pkgdocdir='${datadir}/doc/${PACKAGE}-${VERSION}'
 AC_SUBST(pkgdocdir)

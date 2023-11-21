@@ -29,7 +29,7 @@ along with the GLU and GLUT toolkits, devel package.
 
 %build
 autoreconf -ifv
-%configure --disable-examples
+%configure --disable-examples --disable-static
 make
 
 %install
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %{_fmoddir}/GL/*.mod
-%{_libdir}/*.a
+#{_libdir}/*.a
 %{_libdir}/*.la
 %{_libdir}/*.so*
 
