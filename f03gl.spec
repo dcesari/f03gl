@@ -5,7 +5,7 @@ Release: 5%{dist}
 License: GPLv3
 Group: System Environment/Libraries
 URL: http://www-stone.ch.cam.ac.uk/pub/f03gl/index.xhtml
-Source0: %{name}-%{version}.tar.gz
+Source0: https://github.com/dcesari/f03gl/archive/refs/tags/%{name}-%{version}-%{release}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: gcc-gfortran, mesa-libGL-devel, mesa-libGLU-devel, freeglut-devel, libtool
 
